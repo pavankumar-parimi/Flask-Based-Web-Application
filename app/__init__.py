@@ -24,7 +24,7 @@ def create_app(config_class=Config):
     from app.main import bp as main_bp
     app.register_blueprint(main_bp)
 
-    return app
+    return app.run(host='0.0.0.0', port=4000, debug=True)
 
 
 from app import models
