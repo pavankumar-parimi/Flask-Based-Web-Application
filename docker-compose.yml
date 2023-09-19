@@ -10,6 +10,8 @@ services:
     environment:
       SECRET_KEY: pavan
       MONGODB_HOSTNAME: mongodb
+      USERNAME: root
+      PASSWORD: example
     depends_on:
       - mongodb
     networks:

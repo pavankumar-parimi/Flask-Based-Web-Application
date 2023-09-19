@@ -7,3 +7,5 @@ load_dotenv(os.path.join(basedir, '.env'))
 class Config(object):
     SECRET_KEY = os.environ.get("SECRET_KEY")
     MONGO_URI  =  os.environ.get("MONGODB_HOSTNAME") + ':27017'
+    USERNAME = os.environ.get("USERNAME")
+    PASSWORD = os.environ.get("PASSWORD")

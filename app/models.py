@@ -17,7 +17,7 @@ class User(object):
         self.email = email
         self.password = password
         # Your mongo URI defined in config.py
-        self.db = MongoClient(Config.MONGO_URI)["Users"]
+        self.db = MongoClient(Config.MONGO_URI, username=Config.USERNAME, password=Config.PASSWORD)["Users"]
 
     @staticmethod
     def is_authenticated():
